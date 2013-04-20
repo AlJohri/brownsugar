@@ -1012,9 +1012,9 @@ $topbar-menu-link-color-toggled: #888;
 $topbar-menu-icon-color-toggled: #888;
 
 // Transitions and breakpoint styles
-$topbar-transition-speed: 300ms;
-$topbar-breakpoint: emCalc(940px); // Change to 9999px for always mobile layout
-$topbar-media-query: "only screen and (min-width "#{$topbar-breakpoint}")";
+// $topbar-transition-speed: 300ms;
+// $topbar-breakpoint: emCalc(940px); // Change to 9999px for always mobile layout
+// $topbar-media-query: "only screen and (min-width "#{$topbar-breakpoint}")";
 
 
 @import 'foundation';
