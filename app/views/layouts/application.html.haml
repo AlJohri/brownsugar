@@ -2,18 +2,18 @@
 %html
   %head
     %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}
-      %title= content_for?(:title) ? yield(:title) : "Brownsugar"
-      %meta{:content => content_for?(:description) ? yield(:description) : "Brownsugar", :name => "description"}
+      %title= content_for?(:title) ? yield(:title) : "Brown Sugar"
+      %meta{:content => content_for?(:description) ? yield(:description) : "Brown Sugar", :name => "description"}
         = stylesheet_link_tag "application", :media => "all"
         = javascript_include_tag "application"
         = csrf_meta_tags
         = yield(:head)
   %body{:class => "#{controller_name} #{action_name}"}
     #container.container
-      %header
-        = render 'layouts/navigation'
-        = render 'layouts/messages'
-      #main{:role => "main"}
-        = yield
-      %footer
+      = yield
+      /%header
+      /#main{:role => "main"}
+
+      /%footer
+  
     / ! end of #container
