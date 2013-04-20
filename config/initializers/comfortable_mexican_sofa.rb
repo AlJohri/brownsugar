@@ -81,7 +81,7 @@ ComfortableMexicanSofa.configure do |config|
   
   # Site aliases, if you want to have aliases for your site. Good for harmonizing 
   # production env with dev/testing envs.
-  config.hostname_aliases = {'localhost:3000' => 'pure-cove-4868.herokuapp.com']}
+  config.hostname_aliases = {'localhost:3000' => ['pure-cove-4868.herokuapp.com']}
   # Default is nil (not used)
   #   config.hostname_aliases = nil
   
