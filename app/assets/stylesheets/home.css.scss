@@ -1,3 +1,49 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+// .buttons {
+//   position:absolute !important;
+//   top:50%; 
+//   margin-top: -164px;
+// }
+
+.centered {
+    width: 100%; /* Firefox needs this */
+    height: 100%; /* Height can be anything */
+        
+    /* WebKit (Chrome & Safari) */
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    
+    /* Firefox */
+    display: -moz-box;
+    -moz-box-pack: center;
+    -moz-box-align: center;
+    
+    /* IE */
+    display: -ms-box;
+    -ms-box-pack: center;
+    -ms-box-align: center;
+    
+     /* Native CSS */
+    display: box;
+    box-pack: center;
+    box-align: center;
+}
+
+/* 
+This element holds injected scripts inside iframes that in 
+some cases may stretch layouts. So, we're just hiding it. 
+*/
+
+#fb-root {
+    display: none;
+}
+
+/* To fill the container and nothing else */
+
+.fb_iframe_widget, .fb_iframe_widget span, .fb_iframe_widget span iframe[style] {
+    width: 100% !important;
+}

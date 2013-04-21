@@ -12,3 +12,24 @@
  *= require foundation_and_overrides
  *= require_tree .
 */
+
+.row {
+  max-width: 70em !important;
+}
+
+.top-bar {
+	background-image: url("http://www.brownsugar.nu/img/logo.png") !important;
+	background-repeat: no-repeat !important;
+	background-size: auto 80px !important;
+	background-position: 20px 10px !important;
+	padding-bottom: 100px !important;
+	border-bottom: 7px solid;
+}
+
+.orbit-timer {
+  display: none;
+}
+
+.orbit-bullets {
+  width: 90px; // add about 24 per new picture?
+}

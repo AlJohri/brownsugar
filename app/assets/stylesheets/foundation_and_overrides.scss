@@ -992,7 +992,7 @@ $topbar-title-font-size: emCalc(17px);
 // Set the link colors and styles for top-level nav
 $topbar-link-color: #000;
 $topbar-link-weight: bold;
-$topbar-link-font-size: emCalc(13px);
+$topbar-link-font-size: emCalc(20px);
 
 // Style the top bar dropdown elements
 $topbar-dropdown-bg: #333;
@@ -1012,9 +1012,16 @@ $topbar-menu-link-color-toggled: #888;
 $topbar-menu-icon-color-toggled: #888;
 
 // Transitions and breakpoint styles
-// $topbar-transition-speed: 300ms;
-// $topbar-breakpoint: emCalc(940px); // Change to 9999px for always mobile layout
+$topbar-transition-speed: 300ms;
+$topbar-breakpoint: emCalc(900px); // Change to 9999px for always mobile layout
 // $topbar-media-query: "only screen and (min-width "#{$topbar-breakpoint}")";
 
+.top-bar-section li a:not(.button) {
+	background: none !important;
+}
+
+.top-bar-section ul {
+	background: none !important;
+}
 
 @import 'foundation';

@@ -8,12 +8,54 @@
         = javascript_include_tag "application"
         = csrf_meta_tags
         = yield(:head)
-  %body{:class => "#{controller_name} #{action_name}"}
+  %body{:class => "#{controller_name} #{action_name}"}  
     #container.container
+    %header
+      .large-12.columns
+        %nav.top-bar
+          %ul.title-area
+            %li.name
+              %h1
+                %a{:href => "#"}
+                  /%img#logo{:src => "http://www.brownsugar.nu/img/logo.png"}/
+            %li.toggle-topbar.menu-icon
+              %a{:href => "#"}
+                %span 
+          %section.top-bar-section
+            %ul.right
+              %li
+                %a{:href => "#"} Music            
+              %li
+                %a{:href => "#"} Photos
+              %li
+                %a{:href => "#"} Members
+              %li
+                %a{:href => "#"} Contact                
+    #main{:role => "main"}
       = yield
-      /%header
-      /#main{:role => "main"}
+    %footer.row
+      .large-12.columns
+        %hr/
+        .row
+          .large-6.columns
+            %p © Copyright Brown Sugar
+          .large-6.columns
+            %ul.inline-list.right
+              %li
+                %a{:href => "#"} Link 1
+              %li
+                %a{:href => "#"} Link 2
+              %li
+                %a{:href => "#"} Link 3
+              %li
+                %a{:href => "#"} Link 4 
 
-      /%footer
-  
-    / ! end of #container
+#fb-root
+:javascript
+  (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=261778463899701";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
