@@ -1,14 +1,12 @@
-
-function centerButtons() {
-	height = $("#topleft .orbit-container").css("height");
-	$("#topright").css("height", height);
+function blah() {
+	// fucks up orbit
+	//$('#featured, #importantinfo').syncHeight({ 'updateOnResize': false});
 }
-
 
 $(window).load(function() {
-	setTimeout(centerButtons,1);
+	//setTimeout(blah,0.00001);
 });
 
-window.onresize = function(event) {	
-	centerButtons();
-}
+// $(window).load(function() {
+//    $('#featuredContent').orbit({ fluid: '3x1' });
+// });

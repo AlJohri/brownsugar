@@ -9,41 +9,27 @@
 // }
 
 .centered {
-    width: 100%; /* Firefox needs this */
-    height: 100%; /* Height can be anything */
-        
-    /* WebKit (Chrome & Safari) */
-    display: -webkit-box;
-    -webkit-box-pack: center;
-    -webkit-box-align: center;
-    
-    /* Firefox */
-    display: -moz-box;
-    -moz-box-pack: center;
-    -moz-box-align: center;
-    
-    /* IE */
-    display: -ms-box;
-    -ms-box-pack: center;
-    -ms-box-align: center;
-    
-     /* Native CSS */
-    display: box;
-    box-pack: center;
-    box-align: center;
+    //flexbox shit
 }
 
-/* 
-This element holds injected scripts inside iframes that in 
-some cases may stretch layouts. So, we're just hiding it. 
-*/
-
-#fb-root {
-    display: none;
-}
-
-/* To fill the container and nothing else */
+#fb-root { display: none; }
 
 .fb_iframe_widget, .fb_iframe_widget span, .fb_iframe_widget span iframe[style] {
     width: 100% !important;
+    //overflow: hidden;
+    margin-bottom: -20px;
+    height: 300px;
 }
+
+.twitter-timeline .twitter-timeline-rendered {
+    min-width: none !important;
+    max-width: none !important;
+    width: 100% !important;
+    height: 300px;
+}
+
+
+
+//https://www.facebook.com/feeds/page.php?format=rss20&id=10288601762
+//https://api.twitter.com/1/statuses/user_timeline.rss?screen_name=BrownSugarNU
+

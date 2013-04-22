@@ -8,54 +8,35 @@
       %img{:alt => "slide image3", :src => "assets/singstrong1.png"}/
       %img{:alt => "slide image3", :src => "assets/singstrong2.png"}/  
   .large-3.columns.hide-for-small
-    .fb-like-box{"data-border-color" => "#eee", "data-header" => "true", "data-href" => "http://www.facebook.com/BrownSugarNU", "data-show-faces" => "false", "data-stream" => "true"}
-    / .centered
-    /   /%p hello world
-    /   %a.button.expand{:href => "#"} Button
-    /   %a.button.expand{:href => "#"} Button
-    /   %a.button.expand{:href => "#"} Button
-    /   %a.button.expand{:href => "#"} Button
+    #importantinfo.centered.panel{"style" => "text-align:center"}
+      %p 
+        %h5 Come to our next performance
+      %p
+        %h2 Blah Blah
+      %p        
+        %ul.disc
+          %li{"style" => "list-style-position: inside;"}
+            Where: Your Mom
+          %li{"style" => "list-style-position: inside;"}
+            When: everyday
+      
+
 %br/
 
 .row
   .large-12.columns
     .row
       / Thumbnails
-      .large-3.small-6.columns
-        %img{:src => "http://placehold.it/250x250&text=Thumbnail"}/
-        %h6.panel Description
-      .large-3.small-6.columns
-        %img{:src => "http://placehold.it/250x250&text=Thumbnail"}/
-        %h6.panel Description
-      .large-3.small-6.columns
-        %img{:src => "http://placehold.it/250x250&text=Thumbnail"}/
-        %h6.panel Description
-      .large-3.small-6.columns
-        %img{:src => "http://placehold.it/250x250&text=Thumbnail"}/
-        %h6.panel Description
-      / End Thumbnails
-
-
-.row
-  .large-12.columns
-    .row
-      .large-8.columns
-        .panel.radius
-          .row
-            .large-6.small-6.columns
-              %h4 Header
-              %hr/
-              %h5.subheader
-                Risus ligula, aliquam nec fermentum vitae, sollicitudin eget urna. Donec dignissim nibh fermentum odio ornare sagittis.
-              .show-for-small{:align => "center"}
-                %a.small.radius.button{:href => "#"} Call To Action!
-                %br/
-                %a.small.radius.button{:href => "#"} Call To Action!
-            .large-6.small-6.columns
-              %p
-                Suspendisse ultrices ornare tempor. Aenean eget ultricies libero. Phasellus non ipsum eros. Vivamus at dignissim massa. Aenean dolor libero, blandit quis interdum et, malesuada nec ligula. Nullam erat erat, eleifend sed pulvinar ac. Suspendisse ultrices ornare tempor. Aenean eget ultricies libero.
-      .large-4.columns.hide-for-small
-        %h4 Get In Touch!
+      .large-3.small-6.columns.hide-for-small{"height" => "300px"}
+        .fb-like-box{"data-border-color" => "#eee", "data-header" => "false", "data-height" => "300", "data-href" => "http://www.facebook.com/brownsugarnu", "data-show-faces" => "false", "data-stream" => "true", "data-width" => "292"}
+      .large-3.small-6.columns.hide-for-small{"height" => "300px"}
+        %a.twitter-timeline{"data-widget-id" => "326232966407782400", :href => "https://twitter.com/BrownSugarNU", "data-chrome" => "noheader nofooter  transparent", "height" => "300px"} Tweets by @BrownSugarNU
+      .large-3.small-6.columns{"height" => "300px"}
+        %h5 Check out our new album!
+        %hr/
+        %img{:alt => "album art", :src => "assets/cdcover.jpg"}/
+      .large-3.small-6.columns{"height" => "300px"}
+        %h5 Get In Touch!
         %hr/
         %a{:href => "#"}
         .panel.radius.callout{:align => "center"}
@@ -63,4 +44,21 @@
         %a{:href => "#"}
         .panel.radius.callout{:align => "center"}
           %strong Call To Action!
+      / End Thumbnails
+    %br/
 
+
+
+
+#fb-root
+  :javascript
+    (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=261778463899701";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+
+:javascript
+  !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
