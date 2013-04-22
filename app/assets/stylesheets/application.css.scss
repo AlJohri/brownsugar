@@ -13,9 +13,7 @@
  *= require_tree .
 */
 
-.row {
-  max-width: 70em !important;
-}
+.row { max-width: 70em !important; }
 
 .top-bar {
 	background-image: url("logo.png") !important;
@@ -26,10 +24,5 @@
 	border-bottom: 7px solid;
 }
 
-// .orbit-timer {
-//   display: none;
-// }
-
-// .orbit-bullets {
-//   width: 90px; // add about 24 per new picture?
-// }
+.orbit-timer { display: none; }
+.orbit-bullets { width: 114px; } // add 24 pixels for every added picture
